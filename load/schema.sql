@@ -33,80 +33,90 @@ CREATE MATERIALIZED VIEW matches AS (
 );
 
 
-DROP TABLE raw_teams;
+DROP TABLE raw_teams CASCADE;
 
 CREATE TABLE raw_teams (
-  district varchar,
-  locale varchar,
-  location varchar,
-  number varchar,
-  related varchar,
-  mostRecentYear varchar,
-  rookieYear varchar,
-  pos varchar,
-  accuratePos boolean,
-  schoolName varchar,
-  sponsors varchar,
-  notes varchar,
-  x varchar
+  team_number_yearly varchar,
+  team_name_calc varchar,
+  team_nickname varchar,
+  team_city varchar,
+  team_stateprov varchar,
+  team_postalcode varchar,
+  profile_year int,
+  fk_program_seasons varchar,
+  team_rookieyear int,
+  team_web_url varchar,
+  team_country varchar,
+  countryCode varchar,
+  team_type varchar,
+  program_code_display varchar,
+  program_name varchar,
+  lat float,
+  lon float
 );
 
-DROP TABLE raw_events;
+DROP TABLE raw_events CASCADE;
 
 CREATE TABLE raw_events(
-  key varchar,
-  name varchar,
+  event_name varchar,
+  event_name_analyzed varchar,
   event_code varchar,
+  fk_program_seasons varchar,
+  event_subtype varchar,
+  event_subtype_moniker varchar,
   event_type varchar,
-  city varchar,
-  state_prov varchar,
-  country varchar,
-  start_date date,
-  end_date date,
-  year int,
-  district_name varchar,
-  district_key varchar,
-  district_year int,
-  district_abbreviation varchar,
+  event_venue varchar,
+  event_venue_sort varchar,
+  event_venue_analyzed varchar,
+  event_stateprov varchar,
+  event_country varchar,
+  event_city varchar,
+  event_address1 varchar,
+  event_address2 varchar,
+  date_end date,
+  date_start date,
+  event_postalcode varchar,
+  event_season int,
+  capacity_total int,
+  event_web_url varchar,
+  flag_bag_and_tag_event boolean,
+  program_code_display varchar,
+  program_name varchar,
+  flag_display_in_vims boolean,
+  ff_event_type_sort_order varchar,
+  countryCode varchar,
+  open_capacity int,
+  event_fee_currency varchar,
+  hotel_document varchar,
+  id varchar,
   lat float,
-  long float
+  lon float,
+  event_venue_room varchar,
+  event_fee_base varchar,
+  community_event_contact_name_first varchar,
+  community_event_contact_name_last varchar,
+  community_event_contact_email varchar
 );
-
--- We need this because PostGIS is lon/lat instead of lat/lon 
-CREATE FUNCTION pos_to_point(val varchar) RETURNS geometry AS $$
-DECLARE
-  arr varchar[] := string_to_array(val, ',');
-BEGIN
-  RETURN ST_POINT(arr[2]::float, arr[1]::float);
-END; $$
-LANGUAGE plpgsql;
-
-
 
 -- Create MATERIALIZED VIEW to make it look like a table, far easier to refresh though
 
 CREATE MATERIALIZED VIEW teams AS
   SELECT
-    CONCAT('frc', number) AS teamId,
-    number,
-    string_to_array(related, ',') AS related,
-    mostRecentYear,
-    rookieYear,
-    CASE WHEN pos SIMILAR TO '(\-?\d+(\.\d+)?),\s*(\-?\d+(\.\d+)?)' THEN pos_to_point(pos)
-      ELSE null
-    END AS location,
-    accuratePos,
-    schoolName,
-    sponsors,
-    CASE WHEN district = '#N/A' THEN null ELSE district END AS district
+    CONCAT('frc', team_number_yearly) AS teamId,
+    team_number_yearly as number,
+    profile_year as mostrecentyear,
+    team_rookieyear as rookieYear,
+    ST_POINT(lon, lat) as location,
+    program_name as sponsors,
+    team_nickname as nickname,
+    countryCode as country
   FROM raw_teams
-  WHERE number IS NOT NULL
 ;
 
 CREATE MATERIALIZED VIEW events AS
   SELECT
     *,
-    st_point(long, lat) as location
+    st_point(lon, lat) as location
   FROM raw_events;
 
 -- Now into win/loss data
