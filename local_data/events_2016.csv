@@ -1,0 +1,204 @@
+"key","name","event_code","event_type","city","state_prov","country","start_date","end_date","year","district.display_name","district.key","district.year","district.abbreviation","lat","long"
+"2016abca","Western Canada Regional","abca",0,"Salt Lake City","UT","USA","2016-04-03","2016-04-06",2016,,,,,40.7607793,-111.8910474
+"2016alhu","Rocket City Regional","alhu",0,"Huntsville","AL","USA","2016-03-23","2016-03-26",2016,,,,,34.7303688,-86.5861037
+"2016arc","Archimedes Division","arc",3,"St. Louis","MO","USA","2016-04-27","2016-04-30",2016,,,,,38.6270025,-90.19940419999999
+"2016arlr","Arkansas Rock City Regional","arlr",0,"Little Rock","AR","USA","2016-03-09","2016-03-12",2016,,,,,34.7464809,-92.28959479999999
+"2016aroz","Ozark Mountain Brawl","aroz",99,"Arkansas","AR","USA","2016-10-07","2016-10-08",2016,,,,,34.2354138,-91.28910359999999
+"2016ausy","Australia Regional","ausy",0,"Sydney Olympic Park","NSW","Australia","2016-03-16","2016-03-19",2016,,,,,-33.84801,151.06488
+"2016azcmp","Sanghi Foundation Arizona FIRST Robotics State Championship","azcmp",99,"Phoenix","AZ","USA","2016-10-15","2016-10-15",2016,,,,,33.4483771,-112.0740373
+"2016azfl","Arizona North Regional","azfl",0,"Flagstaff","AZ","USA","2016-03-09","2016-03-12",2016,,,,,35.1982836,-111.651302
+"2016azpx","Arizona West Regional","azpx",0,"Phoenix","AZ","USA","2016-04-06","2016-04-09",2016,,,,,33.4483771,-112.0740373
+"2016bc","BattleCry 17","bc",99,"Worcester","MA","USA","2016-05-21","2016-05-22",2016,,,,,42.2625932,-71.8022934
+"2016bt","Beantown Blitz","bt",99,"Revere","MA","USA","2016-06-18","2016-06-18",2016,,,,,42.4084302,-71.0119948
+"2016cabb","Battle at the Border","cabb",99,"San Diego","CA","USA","2016-10-15","2016-10-15",2016,,,,,32.715738,-117.1610838
+"2016cabl","Beach Blitz","cabl",99,"Huntington Beach","CA","USA","2016-10-08","2016-10-09",2016,,,,,33.6594835,-117.9988026
+"2016cacc","Capital City Classic","cacc",99,"California","CA","USA","2016-10-21","2016-10-23",2016,,,,,36.778261,-119.4179324
+"2016cacg","CalGames","cacg",99,"California","CA","USA","2016-10-07","2016-10-08",2016,,,,,36.778261,-119.4179324
+"2016cada","Sacramento Regional","cada",0,"Davis","CA","USA","2016-03-23","2016-03-26",2016,,,,,38.5449065,-121.7405167
+"2016cafc","Fall Classic (Day 1)","cafc",99,"Placentia","CA","USA","2016-09-24","2016-09-24",2016,,,,,33.8710729,-117.8627548
+"2016cafc2","Fall Classic (Day 2)","cafc2",99,"Placentia","CA","USA","2016-09-25","2016-09-25",2016,,,,,33.8710729,-117.8627548
+"2016calb","Los Angeles Regional","calb",0,"Long Beach","CA","USA","2016-03-09","2016-03-12",2016,,,,,33.7700504,-118.1937395
+"2016cama","Central Valley Regional","cama",0,"Madera","CA","USA","2016-03-10","2016-03-13",2016,,,,,36.9613356,-120.0607176
+"2016capl","Orange County Regional","capl",0,"Placentia","CA","USA","2016-03-30","2016-04-02",2016,,,,,33.8710729,-117.8627548
+"2016cars","Carson Division","cars",3,"St. Louis","MO","USA","2016-04-27","2016-04-30",2016,,,,,38.6270025,-90.19940419999999
+"2016carv","Carver Division","carv",3,"St. Louis","MO","USA","2016-04-27","2016-04-30",2016,,,,,38.6270025,-90.19940419999999
+"2016casd","San Diego Regional","casd",0,"Del Mar","CA","USA","2016-03-02","2016-03-05",2016,,,,,32.9594891,-117.2653146
+"2016casj","Silicon Valley Regional presented by Google.org","casj",0,"San Jose","CA","USA","2016-04-06","2016-04-09",2016,,,,,37.3382082,-121.8863286
+"2016cass","SCRRF Spring Scrimmage","cass",100,"Placentia","CA","USA","2016-02-20","2016-02-21",2016,,,,,33.8710729,-117.8627548
+"2016cave","Ventura Regional","cave",0,"Ventura","CA","USA","2016-03-23","2016-03-26",2016,,,,,34.274646,-119.2290316
+"2016cc","Chezy Champs","cc",99,"San Jose","CA","USA","2016-09-24","2016-09-25",2016,,,,,37.3382082,-121.8863286
+"2016chcmp","FIRST Chesapeake District Championship sponsored by Booz Allen Hamilton","chcmp",2,"College Park","MD","USA","2016-04-06","2016-04-09",2016,"Chesapeake","2016chs",2016,"chs",38.9896967,-76.93776
+"2016cmp","Einstein Field","cmp",4,"St. Louis","MO","USA","2016-04-30","2016-04-30",2016,,,,,,
+"2016code","Colorado Regional","code",0,"Denver","CO","USA","2016-03-23","2016-03-26",2016,,,,,39.7392358,-104.990251
+"2016cthar","NE District - Hartford Event","cthar",1,"Hartford","CT","USA","2016-04-01","2016-04-03",2016,"New England","2016ne",2016,"ne",41.76371109999999,-72.6850932
+"2016ctsc","Connecticut State Championship","ctsc",99,"Southbury","CT","USA","2016-05-14","2016-05-14",2016,,,,,41.4793072,-73.2133715
+"2016ctss","Suffield Shakedown Scrimmage","ctss",100,"Suffield","CT","USA","2016-02-20","2016-02-20",2016,,,,,41.9915062,-72.7017741
+"2016cttd","CowTown ThrowDown","cttd",99,"Lee's Summit","MO","USA","2016-10-28","2016-10-29",2016,,,,,38.9108408,-94.3821724
+"2016ctwat","NE District - Waterbury Event","ctwat",1,"Waterbury","CT","USA","2016-03-04","2016-03-06",2016,"New England","2016ne",2016,"ne",41.5581525,-73.0514965
+"2016cur","Curie Division","cur",3,"St. Louis","MO","USA","2016-04-27","2016-04-30",2016,,,,,38.6270025,-90.19940419999999
+"2016flmm","Mission Mayhem","flmm",99,"Florida","FL","USA","2016-10-22","2016-10-22",2016,,,,,27.6648274,-81.5157535
+"2016flor","Orlando Regional","flor",0,"Orlando","FL","USA","2016-03-09","2016-03-12",2016,,,,,28.5383355,-81.3792365
+"2016flpp","Panther Prowl","flpp",99,"Florida","FL","USA","2016-09-24","2016-09-24",2016,,,,,27.6648274,-81.5157535
+"2016flrc","ROBOTICON Tampa Bay","flrc",99,"Florida","FL","USA","2016-10-08","2016-10-09",2016,,,,,,
+"2016flwp","South Florida Regional ","flwp",0,"West Palm Beach","FL","USA","2016-03-30","2016-04-02",2016,,,,,26.7153424,-80.0533746
+"2016gaalb","PCH District - Albany Event","gaalb",1,"Albany","GA","USA","2016-03-17","2016-03-19",2016,"Peachtree","2016pch",2016,"pch",31.5785074,-84.15574099999999
+"2016gacmp","Peachtree District State Championship","gacmp",2,"Athens","GA","USA","2016-04-13","2016-04-16",2016,"Peachtree","2016pch",2016,"pch",33.9519347,-83.357567
+"2016gacol","PCH District - Columbus Event","gacol",1,"Columbus","GA","USA","2016-03-10","2016-03-12",2016,"Peachtree","2016pch",2016,"pch",32.4609764,-84.9877094
+"2016gadal","PCH District - Dalton Event","gadal",1,"Dalton","GA","USA","2016-03-17","2016-03-19",2016,"Peachtree","2016pch",2016,"pch",34.7698021,-84.9702228
+"2016gagr","GRITS - Georgia Robotics Invitations Tournament and Showcase","gagr",99,"Gainesville","GA","USA","2016-10-22","2016-10-22",2016,,,,,,
+"2016gaken","PCH District - Kennesaw Event","gaken",1,"Kennesaw","GA","USA","2016-04-08","2016-04-10",2016,"Peachtree","2016pch",2016,"pch",34.0234337,-84.6154897
+"2016gal","Galileo Division","gal",3,"St. Louis","MO","USA","2016-04-27","2016-04-30",2016,,,,,38.6270025,-90.19940419999999
+"2016glbbb","Great Lakes Bay Bot Bash","glbbb",99,"Michigan","MI","USA","2016-10-07","2016-10-08",2016,,,,,44.3148443,-85.60236429999999
+"2016havoc","HAVOC","havoc",99,"Horsham","PA","USA","2016-09-24","2016-09-24",2016,,,,,40.1784422,-75.1285061
+"2016heat","Summer Heat","heat",99,"South Portland","ME","USA","2016-07-16","2016-07-16",2016,,,,,43.6414716,-70.2408811
+"2016hiho","Hawaii Regional","hiho",0,"Honolulu","HI","USA","2016-03-30","2016-04-02",2016,,,,,21.3069444,-157.8583333
+"2016hop","Hopper Division","hop",3,"St. Louis","MO","USA","2016-04-27","2016-04-30",2016,,,,,38.6270025,-90.19940419999999
+"2016iacf","Iowa Regional","iacf",0,"Cedar Falls","IA","USA","2016-03-23","2016-03-26",2016,,,,,42.5348993,-92.4453161
+"2016idbo","Idaho Regional","idbo",0,"Boise","ID","USA","2016-03-30","2016-04-02",2016,,,,,43.6187102,-116.2146068
+"2016ilch","Midwest Regional","ilch",0,"Chicago","IL","USA","2016-03-30","2016-04-02",2016,,,,,41.8781136,-87.6297982
+"2016ilpe","Central Illinois Regional","ilpe",0,"Peoria","IL","USA","2016-03-16","2016-03-19",2016,,,,,40.6936488,-89.5889864
+"2016ilrr","Rock River Off-Season Competition","ilrr",99,"Rockford","IL","USA","2016-07-30","2016-07-30",2016,,,,,42.2711311,-89.0939952
+"2016inbbb","Boiler Bot Battle","inbbb",99,,"IN","USA","2016-09-16","2016-09-17",2016,,,,,32.5775393,-97.3527615
+"2016incmp","Indiana State Championship","incmp",2,"Kokomo","IN","USA","2016-04-14","2016-04-16",2016,"Indiana","2016in",2016,"in",40.486427,-86.13360329999999
+"2016inpmh","IN District - Perry Meridian Event","inpmh",1,"Indianapolis","IN","USA","2016-03-24","2016-03-26",2016,"Indiana","2016in",2016,"in",39.768403,-86.158068
+"2016inwch","IN District - Walker Warren Event","inwch",1,"Indianapolis","IN","USA","2016-03-18","2016-03-20",2016,"Indiana","2016in",2016,"in",39.768403,-86.158068
+"2016inwla","IN District - Tippecanoe Event","inwla",1,"West Lafayette","IN","USA","2016-03-11","2016-03-13",2016,"Indiana","2016in",2016,"in",40.4258686,-86.90806549999999
+"2016iri","Indiana Robotics Invitational","iri",99,"Indianapolis","IN","USA","2016-07-15","2016-07-16",2016,,,,,39.768403,-86.158068
+"2016iroc","IROC - ILITE Robotics Offseason Challenge","iroc",99,"Virginia","VA","USA","2016-10-22","2016-10-22",2016,,,,,37.4315734,-78.6568942
+"2016ista","Israel Regional","ista",0,"Tel Aviv-Yafo","Tel Aviv District","Israel","2016-03-08","2016-03-10",2016,,,,,32.0852999,34.78176759999999
+"2016kybb","Battle for the Bluegrass","kybb",99,"Corbin","KY","USA","2016-10-29","2016-10-29",2016,,,,,36.9486986,-84.0968761
+"2016lake","Bayou Regional","lake",0,"Kenner","LA","USA","2016-03-16","2016-03-19",2016,,,,,29.9940924,-90.2417434
+"2016mabos","NE District - Boston Event","mabos",1,"Boston","MA","USA","2016-04-01","2016-04-03",2016,"New England","2016ne",2016,"ne",42.3600825,-71.0588801
+"2016mabsb","Bay State Brawl","mabsb",99,"Massachusetts","MA","USA","2016-10-29","2016-10-29",2016,,,,,42.4072107,-71.3824374
+"2016manda","NE District - UMass-Dartmouth Event","manda",1,"Dartmouth","MA","USA","2016-03-18","2016-03-20",2016,"New England","2016ne",2016,"ne",41.6130323,-70.9704787
+"2016marc","Michigan Advanced Robotics Competition","marc",99,"Monroe","MI","USA","2016-06-24","2016-06-25",2016,,,,,41.9164343,-83.3977101
+"2016marea","NE District - North Shore Event","marea",1,"Reading","MA","USA","2016-03-11","2016-03-13",2016,"New England","2016ne",2016,"ne",42.5256563,-71.0952891
+"2016mawor","NE District - WPI Event","mawor",1,"Worcester","MA","USA","2016-03-11","2016-03-13",2016,"New England","2016ne",2016,"ne",,
+"2016mdbb","Battle O' Baltimore","mdbb",99,"Maryland","MD","USA","2016-09-23","2016-09-24",2016,,,,,39.0457549,-76.64127119999999
+"2016mdbet","CHS District - Greater DC Event","mdbet",1,"Bethesda","MD","USA","2016-03-11","2016-03-13",2016,"Chesapeake","2016chs",2016,"chs",38.984652,-77.0947092
+"2016mdblr","CHS District - Northern Maryland Event","mdblr",1,"Bel Air","MD","USA","2016-03-18","2016-03-20",2016,"Chesapeake","2016chs",2016,"chs",,
+"2016mdedg","CHS District - Central Maryland Event","mdedg",1,"Edgewater","MD","USA","2016-03-24","2016-03-26",2016,"Chesapeake","2016chs",2016,"chs",38.94056399999999,-76.5629398
+"2016melew","NE District - Pine Tree Event","melew",1,"Lewiston","ME","USA","2016-04-07","2016-04-09",2016,"New England","2016ne",2016,"ne",44.100351,-70.21477639999999
+"2016mems","Mainely SPIRIT","mems",99,"Oakland","ME","USA","2016-09-17","2016-09-17",2016,,,,,44.5402221,-69.72199499999999
+"2016miann","FIM District - Ann Arbor Skyline Event","miann",1,"Ann Arbor","MI","USA","2016-04-07","2016-04-09",2016,"Michigan","2016fim",2016,"fim",42.2808256,-83.7430378
+"2016mibg","Bloomfield Girls Robotics Competition","mibg",99,"Bloomfield Hills","MI","USA","2016-11-11","2016-11-12",2016,,,,,42.583645,-83.24548829999999
+"2016mibro","FIM District - Woodhaven Event","mibro",1,"Brownstown Charter Township","MI","USA","2016-04-07","2016-04-09",2016,"Michigan","2016fim",2016,"fim",42.1261157,-83.2572332
+"2016micen","FIM District - Center Line Event","micen",1,"Center Line","MI","USA","2016-03-17","2016-03-19",2016,"Michigan","2016fim",2016,"fim",,
+"2016micmp","Michigan State Championship","micmp",2,"Grand Rapids","MI","USA","2016-04-13","2016-04-16",2016,"Michigan","2016fim",2016,"fim",,
+"2016miesc","FIM District - Escanaba Event","miesc",1,"Escanaba","MI","USA","2016-03-17","2016-03-19",2016,"Michigan","2016fim",2016,"fim",,
+"2016mihow","FIM District - Howell Event","mihow",1,"Howell","MI","USA","2016-03-31","2016-04-02",2016,"Michigan","2016fim",2016,"fim",,
+"2016mike2","FIM District - Kettering University Event #2","mike2",1,"Flint","MI","USA","2016-03-10","2016-03-12",2016,"Michigan","2016fim",2016,"fim",43.0125274,-83.6874562
+"2016miken","FIM District - East Kentwood Event","miken",1,"Kentwood","MI","USA","2016-03-31","2016-04-02",2016,"Michigan","2016fim",2016,"fim",,
+"2016miket","FIM District - Kettering University Event #1","miket",1,"Flint","MI","USA","2016-03-03","2016-03-05",2016,"Michigan","2016fim",2016,"fim",,
+"2016milak","FIM District - Lakeview Event","milak",1,"Battle Creek","MI","USA","2016-03-10","2016-03-12",2016,"Michigan","2016fim",2016,"fim",42.3211522,-85.17971419999999
+"2016milan","FIM District - Lansing Event","milan",1,"Mason","MI","USA","2016-03-24","2016-03-26",2016,"Michigan","2016fim",2016,"fim",,
+"2016miliv","FIM District - Livonia Event","miliv",1,"Livonia","MI","USA","2016-03-24","2016-03-26",2016,"Michigan","2016fim",2016,"fim",,
+"2016milsu","FIM District - Lake Superior State University Event","milsu",1,"Sault Ste. Marie","MI","USA","2016-03-31","2016-04-02",2016,"Michigan","2016fim",2016,"fim",,
+"2016mimar","FIM District - Marysville Event","mimar",1,"Marysville","MI","USA","2016-03-24","2016-03-26",2016,"Michigan","2016fim",2016,"fim",,
+"2016mimid","FIM District - Midland Event","mimid",1,"Midland","MI","USA","2016-03-17","2016-03-19",2016,"Michigan","2016fim",2016,"fim",43.6155825,-84.2472116
+"2016mirc","ROBO-CON Festival of Robotics and STEM Learning","mirc",99,"Michigan","MI","USA","2016-07-23","2016-07-23",2016,,,,,,
+"2016misjo","FIM District - St. Joseph Event","misjo",1,"Saint Joseph","MI","USA","2016-03-10","2016-03-12",2016,"Michigan","2016fim",2016,"fim",,
+"2016misou","FIM District - Southfield Event","misou",1,"Southfield","MI","USA","2016-03-03","2016-03-05",2016,"Michigan","2016fim",2016,"fim",,
+"2016mista","FIM District - Standish-Sterling Event","mista",1,"Standish","MI","USA","2016-03-03","2016-03-05",2016,"Michigan","2016fim",2016,"fim",,
+"2016mitry","FIM District - Troy Event","mitry",1,"Troy","MI","USA","2016-03-31","2016-04-02",2016,"Michigan","2016fim",2016,"fim",,
+"2016mitvc","FIM District - Traverse City Event","mitvc",1,"Traverse City","MI","USA","2016-04-07","2016-04-09",2016,"Michigan","2016fim",2016,"fim",,
+"2016miwat","FIM District - Waterford Event","miwat",1,"Waterford Township","MI","USA","2016-03-03","2016-03-05",2016,"Michigan","2016fim",2016,"fim",,
+"2016miwmi","FIM District - West Michigan Event","miwmi",1,"Allendale Charter Township","MI","USA","2016-03-24","2016-03-26",2016,"Michigan","2016fim",2016,"fim",,
+"2016mndu","Lake Superior Regional","mndu",0,"Duluth","MN","USA","2016-03-02","2016-03-05",2016,,,,,,
+"2016mndu2","Northern Lights Regional","mndu2",0,"Duluth","MN","USA","2016-03-02","2016-03-05",2016,,,,,,
+"2016mngggt","Gitchi Gummi Get Together","mngggt",99,"Minnesota","MN","USA","2016-07-29","2016-07-30",2016,,,,,46.729553,-94.6858998
+"2016mnmi","Minnesota 10000 Lakes Regional","mnmi",0,"Minneapolis","MN","USA","2016-04-06","2016-04-09",2016,,,,,,
+"2016mnmi2","Minnesota North Star Regional","mnmi2",0,"Minneapolis","MN","USA","2016-04-06","2016-04-09",2016,,,,,,
+"2016mnri","Minnesota Robotics Invitational","mnri",99,"Roseville","MN","USA","2016-10-15","2016-10-15",2016,,,,,,
+"2016mnsc","Minnesota State High School League State Championships","mnsc",99,"Minneapolis","MN","USA","2016-05-21","2016-05-21",2016,,,,,,
+"2016mogw","Gateway Robotics Challenge","mogw",99,"Missouri","MO","USA","2016-10-01","2016-10-01",2016,,,,,,
+"2016mokc","Greater Kansas City Regional","mokc",0,"Kansas City","MO","USA","2016-03-09","2016-03-12",2016,,,,,,
+"2016mosc","Missouri Robotics State Championship","mosc",99,"Missouri","MO","USA","2016-05-14","2016-05-14",2016,,,,,,
+"2016mosl","St. Louis Regional","mosl",0,"St. Louis","MO","USA","2016-03-09","2016-03-12",2016,,,,,,
+"2016mrcmp","Mid-Atlantic Robotics District Championship","mrcmp",2,"Bethlehem","PA","USA","2016-04-13","2016-04-16",2016,"Mid-Atlantic","2016mar",2016,"mar",,
+"2016mttd","MadTown ThrowDown","mttd",99,"Madera","CA","USA","2016-11-11","2016-11-12",2016,,,,,,
+"2016mvrc","Mahoning Valley Robotics Challenge","mvrc",99,"Austintown","OH","USA","2016-09-25","2016-09-25",2016,,,,,,
+"2016mxmc","Mexico City Regional ","mxmc",0,"Mexico City","DIF","Mexico","2016-03-09","2016-03-12",2016,,,,,,
+"2016ncash","NC District - UNC Asheville Event","ncash",1,"Asheville","NC","USA","2016-03-18","2016-03-20",2016,"North Carolina","2016nc",2016,"nc",,
+"2016ncbui","NC District - Campbell University/Johnston Community College Event","ncbui",1,"Lillington","NC","USA","2016-04-01","2016-04-03",2016,"North Carolina","2016nc",2016,"nc",,
+"2016nccmp","NC FIRST Robotics State Championship","nccmp",2,"Charlotte","NC","USA","2016-04-08","2016-04-10",2016,"North Carolina","2016nc",2016,"nc",,
+"2016ncmcl","NC District - Guilford County Event","ncmcl",1,"McLeansville","NC","USA","2016-03-04","2016-03-06",2016,"North Carolina","2016nc",2016,"nc",,
+"2016ncral","NC District - Wake County Event","ncral",1,"Raleigh","NC","USA","2016-03-11","2016-03-13",2016,"North Carolina","2016nc",2016,"nc",,
+"2016ncth","THOR - Thundering Herd of Robots","ncth",99,"North Carolina","NC","USA","2016-09-24","2016-09-24",2016,,,,,,
+"2016necmp","New England District Championship","necmp",2,"Hartford","CT","USA","2016-04-13","2016-04-16",2016,"New England","2016ne",2016,"ne",,
+"2016new","Newton Division","new",3,"St. Louis","MO","USA","2016-04-27","2016-04-30",2016,,,,,,
+"2016nhbb","Battle of the Bay","nhbb",99,"New Hampshire","NH","USA","2016-11-12","2016-11-12",2016,,,,,,
+"2016nhdur","NE District - UNH Event","nhdur",1,"Durham","NH","USA","2016-03-24","2016-03-26",2016,"New England","2016ne",2016,"ne",,
+"2016nhgrs","NE District - Granite State Event","nhgrs",1,"Windham","NH","USA","2016-03-04","2016-03-06",2016,"New England","2016ne",2016,"ne",,
+"2016nhmm","Mayhem in Merrimack","nhmm",99,"Merrimack","NH","USA","2016-06-04","2016-06-04",2016,,,,,42.8678693,-71.49483219999999
+"2016nhrr","RiverRage 20","nhrr",99,"Manchester","NH","USA","2016-10-29","2016-10-29",2016,,,,,42.9956397,-71.4547891
+"2016njbri","MAR District - Bridgewater-Raritan Event","njbri",1,"Bridgewater","NJ","USA","2016-04-01","2016-04-03",2016,"Mid-Atlantic","2016mar",2016,"mar",,
+"2016njdd","Duel on the Delaware","njdd",99,"Penns Grove","NJ","USA","2016-10-22","2016-10-22",2016,,,,,,
+"2016njfla","MAR District - Mt. Olive Event","njfla",1,"Mount Olive Township","NJ","USA","2016-03-04","2016-03-06",2016,"Mid-Atlantic","2016mar",2016,"mar",,
+"2016njmm","MidKnight Mayhem IV","njmm",99,"West Windsor Township","NJ","USA","2016-06-25","2016-06-25",2016,,,,,,
+"2016njski","MAR District - Montgomery Event","njski",1,"Montgomery","NJ","USA","2016-04-08","2016-04-10",2016,"Mid-Atlantic","2016mar",2016,"mar",,
+"2016njtab","MAR District - Seneca Event","njtab",1,"Tabernacle","NJ","USA","2016-03-18","2016-03-20",2016,"Mid-Atlantic","2016mar",2016,"mar",39.8433853,-74.7107048
+"2016nvlv","Las Vegas Regional","nvlv",0,"Las Vegas","NV","USA","2016-03-30","2016-04-02",2016,,,,,36.1699412,-115.1398296
+"2016nyhhh","HHH (Half Hollow Hills) Robotics Annual Invitational Tournament","nyhhh",99,"New York","NY","USA","2016-11-19","2016-11-19",2016,,,,,,
+"2016nyhvr","Hudson Valley Rally","nyhvr",99,"New York","NY","USA","2016-06-04","2016-06-04",2016,,,,,40.7127837,-74.0059413
+"2016nyli","SBPLI Long Island Regional","nyli",0,"Hempstead","NY","USA","2016-03-30","2016-04-02",2016,,,,,,
+"2016nyny","New York City Regional","nyny",0,"New York","NY","USA","2016-03-10","2016-03-13",2016,,,,,40.7127837,-74.0059413
+"2016nyro","Finger Lakes Regional ","nyro",0,"Rochester","NY","USA","2016-03-23","2016-03-26",2016,,,,,,
+"2016nyrr","Rah Cha Cha Ruckus","nyrr",99,"Rochester","NY","USA","2016-10-29","2016-10-29",2016,,,,,,
+"2016nytr","New York Tech Valley Regional","nytr",0,"Troy","NY","USA","2016-03-16","2016-03-19",2016,,,,,,
+"2016nytv","Tech Valley Robot Rumble","nytv",99,"Ballston Spa","NY","USA","2016-11-05","2016-11-05",2016,,,,,,
+"2016ohci","Queen City Regional","ohci",0,"Cincinnati","OH","USA","2016-03-30","2016-04-02",2016,,,,,,
+"2016ohcl","Buckeye Regional","ohcl",0,"Cleveland","OH","USA","2016-03-16","2016-03-19",2016,,,,,,
+"2016ohsc","Ohio FRC State Championship","ohsc",99,"Columbus","OH","USA","2016-05-21","2016-05-21",2016,,,,,,
+"2016okok","Oklahoma Regional ","okok",0,"Oklahoma City","OK","USA","2016-03-23","2016-03-26",2016,,,,,,
+"2016onnb","North Bay Regional","onnb",0,"North Bay","ON","Canada","2016-03-23","2016-03-26",2016,,,,,,
+"2016onsc","STEMley Cup Championship","onsc",99,"Hamilton","ON","Canada","2016-11-12","2016-11-12",2016,,,,,,
+"2016onto","Greater Toronto East Regional ","onto",0,"Oshawa","ON","Canada","2016-03-09","2016-03-12",2016,,,,,43.8970929,-78.86579119999999
+"2016onto2","Greater Toronto Central Regional","onto2",0,"Toronto","ON","Canada","2016-03-02","2016-03-05",2016,,,,,,
+"2016onwa","Waterloo Regional ","onwa",0,"Waterloo","ON","Canada","2016-03-30","2016-04-02",2016,,,,,,
+"2016onwi","Windsor Essex Great Lakes Regional","onwi",0,"Windsor","ON","Canada","2016-04-06","2016-04-09",2016,,,,,,
+"2016orore","PNW District - Clackamas Academy of Industrial Science Event","orore",1,"Oregon City","OR","USA","2016-03-31","2016-04-02",2016,"Pacific Northwest","2016pnw",2016,"pnw",45.3573429,-122.6067584
+"2016orphi","PNW District - Philomath Event","orphi",1,"Philomath","OR","USA","2016-03-24","2016-03-26",2016,"Pacific Northwest","2016pnw",2016,"pnw",44.540121,-123.3676014
+"2016orwil","PNW District - Wilsonville Event","orwil",1,"Wilsonville","OR","USA","2016-03-10","2016-03-12",2016,"Pacific Northwest","2016pnw",2016,"pnw",,
+"2016paca","Greater Pittsburgh Regional","paca",0,"California","PA","USA","2016-03-09","2016-03-12",2016,,,,,40.0656291,-79.8917139
+"2016pagp","girlPOWER","pagp",99,"Flourtown","PA","USA","2016-10-08","2016-10-08",2016,,,,,,
+"2016pahat","MAR District - Hatboro-Horsham Event","pahat",1,"Horsham","PA","USA","2016-03-04","2016-03-06",2016,"Mid-Atlantic","2016mar",2016,"mar",40.1784422,-75.1285061
+"2016paphi","MAR District - Springside Chestnut Hill Event","paphi",1,"Philadelphia","PA","USA","2016-03-18","2016-03-20",2016,"Mid-Atlantic","2016mar",2016,"mar",,
+"2016parr","Ramp Riot","parr",99,"Ambler","PA","USA","2016-11-05","2016-11-05",2016,,,,,,
+"2016pawch","MAR District - Westtown Event","pawch",1,"West Chester","PA","USA","2016-04-01","2016-04-03",2016,"Mid-Atlantic","2016mar",2016,"mar",,
+"2016pncmp","Pacific Northwest District Championship sponsored by Autodesk","pncmp",2,"Portland","OR","USA","2016-04-06","2016-04-09",2016,"Pacific Northwest","2016pnw",2016,"pnw",45.5230622,-122.6764815
+"2016qcmo","FRC Festival de Robotique - Montreal Regional","qcmo",0,"Montreal","QC","Canada","2016-03-30","2016-04-02",2016,,,,,,
+"2016ripro","NE District - Rhode Island Event","ripro",1,"Providence","RI","USA","2016-03-24","2016-03-26",2016,"New England","2016ne",2016,"ne",,
+"2016rsr","Red Stick Rumble","rsr",99,"Baton Rouge","LA","USA","2016-08-27","2016-08-27",2016,,,,,30.4582829,-91.1403196
+"2016scmb","Palmetto Regional","scmb",0,"Myrtle Beach","SC","USA","2016-02-24","2016-02-27",2016,,,,,33.6890603,-78.8866943
+"2016tes","Tesla Division","tes",3,"St. Louis","MO","USA","2016-04-27","2016-04-30",2016,,,,,38.6270025,-90.19940419999999
+"2016tnkn","Smoky Mountains Regional","tnkn",0,"Knoxville","TN","USA","2016-03-30","2016-04-02",2016,,,,,35.9606384,-83.9207392
+"2016tnt","TNT Week Zero T&L Field","tnt",100,"Nevis","MN","USA","2016-02-20","2016-02-20",2016,,,,,46.9652363,-94.83945650000001
+"2016txda","Dallas Regional","txda",0,"Irving","TX","USA","2016-03-23","2016-03-26",2016,,,,,32.8140177,-96.9488945
+"2016txho","Lone Star Regional","txho",0,"Houston","TX","USA","2016-04-06","2016-04-09",2016,,,,,29.7604267,-95.3698028
+"2016txlu","Hub City Regional","txlu",0,"Lubbock","TX","USA","2016-03-31","2016-04-03",2016,,,,,33.5778631,-101.8551665
+"2016txri","Texas Robotics Invitational","txri",99,"Texas","TX","USA","2016-06-24","2016-06-25",2016,,,,,29.383845,-94.9027002
+"2016txrm","The Remix","txrm",99,"The Woodlands","TX","USA","2016-10-22","2016-10-22",2016,,,,,30.1658207,-95.46126249999999
+"2016txrr","Texas Robot Roundup: UIL Robotics State Championship","txrr",99,"Texas","TX","USA","2016-07-29","2016-07-30",2016,,,,,29.383845,-94.9027002
+"2016txrrr","Rattlin' Robot Rodeo","txrrr",99,"San Antonio","TX","USA","2016-10-01","2016-10-01",2016,,,,,29.4241219,-98.49362819999999
+"2016txsa","Alamo Regional sponsored by Rackspace Hosting","txsa",0,"San Antonio","TX","USA","2016-03-09","2016-03-12",2016,,,,,29.4241219,-98.49362819999999
+"2016utwv","Utah Regional","utwv",0,"West Valley City","UT","USA","2016-03-16","2016-03-19",2016,,,,,40.6916132,-112.0010501
+"2016vabla","CHS District - Southwest Virginia Event","vabla",1,"Blacksburg","VA","USA","2016-03-11","2016-03-13",2016,"Chesapeake","2016chs",2016,"chs",37.2295733,-80.4139393
+"2016vados","CHS District - Central Virginia Event","vados",1,"Doswell","VA","USA","2016-03-24","2016-03-26",2016,"Chesapeake","2016chs",2016,"chs",37.8654625,-77.4645517
+"2016vahay","CHS District - Northern Virginia Event","vahay",1,"Haymarket","VA","USA","2016-03-04","2016-03-06",2016,"Chesapeake","2016chs",2016,"chs",38.8120591,-77.6363806
+"2016vapor","CHS District - Hampton Roads Event","vapor",1,"Portsmouth","VA","USA","2016-03-18","2016-03-20",2016,"Chesapeake","2016chs",2016,"chs",36.8354258,-76.2982742
+"2016varr","Rumble in the Roads","varr",99,"Virginia","VA","USA","2016-11-05","2016-11-05",2016,,,,,36.8529263,-75.97798499999999
+"2016waahs","PNW District - Auburn Event","waahs",1,"Auburn","WA","USA","2016-04-01","2016-04-03",2016,"Pacific Northwest","2016pnw",2016,"pnw",47.30732279999999,-122.2284532
+"2016waamv","PNW District - Auburn Mountainview Event","waamv",1,"Auburn","WA","USA","2016-03-03","2016-03-05",2016,"Pacific Northwest","2016pnw",2016,"pnw",47.30732279999999,-122.2284532
+"2016waell","PNW District - Central Washington University Event","waell",1,"Ellensburg","WA","USA","2016-03-17","2016-03-19",2016,"Pacific Northwest","2016pnw",2016,"pnw",46.9965144,-120.5478474
+"2016wagg","Washington Girls Generation","wagg",99,"Covington","WA","USA","2016-10-22","2016-10-22",2016,,,,,,
+"2016wamou","PNW District - Mount Vernon Event","wamou",1,"Mount Vernon","WA","USA","2016-03-18","2016-03-20",2016,"Pacific Northwest","2016pnw",2016,"pnw",48.421216,-122.3340474
+"2016wapp","Peak Performance","wapp",99,"SeaTac","WA","USA","2016-09-10","2016-09-10",2016,,,,,,
+"2016warr","Robot Rewind","warr",99,"Spokane","WA","USA","2016-11-11","2016-11-12",2016,,,,,,
+"2016wasno","PNW District - Glacier Peak Event","wasno",1,"Snohomish","WA","USA","2016-03-11","2016-03-13",2016,"Pacific Northwest","2016pnw",2016,"pnw",47.91287560000001,-122.0981847
+"2016waspo","PNW District - West Valley Event","waspo",1,"Spokane","WA","USA","2016-03-03","2016-03-05",2016,"Pacific Northwest","2016pnw",2016,"pnw",47.6587802,-117.4260465
+"2016week0","Week 0","week0",100,"Merrimack","NH","USA","2016-02-20","2016-02-20",2016,,,,,42.8678693,-71.49483219999999
+"2016wimi","Wisconsin Regional","wimi",0,"Milwaukee","WI","USA","2016-03-23","2016-03-26",2016,,,,,,
+"2016wiwi","Where is Wolcott Invitational","wiwi",99,"Wolcott","CT","USA","2016-06-11","2016-06-11",2016,,,,,41.6023196,-72.9867718
+"2016wmri","West Michigan Robotics Invitational","wmri",99,"Zeeland","MI","USA","2016-10-29","2016-10-29",2016,,,,,,
+"2016wvrox","West Virginia RObotics eXtreme","wvrox",99,"Morgantown","WV","USA","2016-08-05","2016-08-06",2016,,,,,39.629526,-79.95589679999999

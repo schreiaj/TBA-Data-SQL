@@ -31,3 +31,17 @@ JOIN most_wins AS wins
 WHERE plays.plays > 30
 ORDER BY win_pct
 LIMIT 25;
+
+
+-- Compute the nearest regional for all teams competing in regionals
+-- I only have 2016 teams loaded, so only doing 2016 for now. 
+SELECT count(teamid) AS team_count,
+  (SELECT key FROM events WHERE year='2016' AND event_type='0' ORDER BY teams.location <#> events.location LIMIT 1) AS nearest_event,
+  ARRAY_AGG(teamid)
+FROM teams
+WHERE mostrecentyear = '2016'
+  AND location is not null
+  AND rookieyear is not null
+  AND district is null
+GROUP BY nearest_event
+ORDER BY team_count DESC;

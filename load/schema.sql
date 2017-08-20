@@ -51,6 +51,38 @@ CREATE TABLE raw_teams (
   x varchar
 );
 
+DROP TABLE raw_events;
+
+CREATE TABLE raw_events(
+  key varchar,
+  name varchar,
+  event_code varchar,
+  event_type varchar,
+  city varchar,
+  state_prov varchar,
+  country varchar,
+  start_date date,
+  end_date date,
+  year int,
+  district_name varchar,
+  district_key varchar,
+  district_year int,
+  district_abbreviation varchar,
+  lat float,
+  long float
+);
+
+-- We need this because PostGIS is lon/lat instead of lat/lon 
+CREATE FUNCTION pos_to_point(val varchar) RETURNS geometry AS $$
+DECLARE
+  arr varchar[] := string_to_array(val, ',');
+BEGIN
+  RETURN ST_POINT(arr[2]::float, arr[1]::float);
+END; $$
+LANGUAGE plpgsql;
+
+
+
 -- Create MATERIALIZED VIEW to make it look like a table, far easier to refresh though
 
 CREATE MATERIALIZED VIEW teams AS
@@ -60,7 +92,7 @@ CREATE MATERIALIZED VIEW teams AS
     string_to_array(related, ',') AS related,
     mostRecentYear,
     rookieYear,
-    CASE WHEN pos SIMILAR TO '(\-?\d+(\.\d+)?),\s*(\-?\d+(\.\d+)?)' THEN st_pointfromtext(concat('POINT(',replace(pos, ',', ''),')'))
+    CASE WHEN pos SIMILAR TO '(\-?\d+(\.\d+)?),\s*(\-?\d+(\.\d+)?)' THEN pos_to_point(pos)
       ELSE null
     END AS location,
     accuratePos,
@@ -71,6 +103,11 @@ CREATE MATERIALIZED VIEW teams AS
   WHERE number IS NOT NULL
 ;
 
+CREATE MATERIALIZED VIEW events AS
+  SELECT
+    *,
+    st_point(long, lat) as location
+  FROM raw_events;
 
 -- Now into win/loss data
 

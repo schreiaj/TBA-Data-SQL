@@ -1,0 +1,11 @@
+{
+  "name": "load-event-data",
+  "version": "1.0.0",
+  "main": "load_events.js",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "json2csv": "^3.11.1",
+    "node-geocoder": "^3.19.0"
+  }
+}

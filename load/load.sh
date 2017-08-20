@@ -8,5 +8,6 @@ find ../data/events -type f -name "*_matches.csv" | while read line; do
 done
 
 echo "\\\copy raw_teams from ../local_data/all_teams.csv with (FORMAT CSV, HEADER true)"
+echo "\\\copy raw_events from ../local_data/events_2016.csv WITH (FORMAT CSV, HEADER true)"
 echo "REFRESH MATERIALIZED VIEW teams;"
 echo "REFRESH MATERIALIZED VIEW matches;"
