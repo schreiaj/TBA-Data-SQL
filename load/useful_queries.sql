@@ -35,9 +35,21 @@ LIMIT 25;
 
 -- Compute the nearest regional for all teams competing in regionals
 -- I only have 2017 events loaded, so only doing 2017 for now.
-SELECT count(teamid) AS team_count,
-  (SELECT event_name FROM events WHERE countryCode='US' AND event_season=2017 AND event_subtype_moniker = 'Regional' OR event_subtype_moniker='District Event' ORDER BY teams.location <#> events.location LIMIT 1) AS event_name
-FROM teams
-WHERE country = 'US'
-GROUP BY event_name
-ORDER BY team_count DESC;
+SELECT ARRAY_AGG(events.event_name) as name,
+  ARRAY_AGG(events.event_code) as code,
+  SUM(capacity_total) as capacity, 
+  COALESCE(SUM(teams.team_count),0) as nearby_teams,
+  SUM(capacity_total) < COALESCE(SUM(teams.team_count),0) as full
+FROM events
+LEFT OUTER JOIN (SELECT count(teamid) AS team_count,
+    (SELECT event_code FROM events WHERE countryCode='US' AND event_season=2017 AND event_subtype_moniker = 'Regional' OR event_subtype_moniker='District Event' ORDER BY teams.location <#> events.location LIMIT 1) AS event_code
+  FROM teams
+  WHERE country = 'US'
+  GROUP BY event_code
+  ORDER BY team_count DESC
+  ) AS teams
+ON teams.event_code = events.event_code
+WHERE countryCode='US' AND event_season=2017 AND event_subtype_moniker = 'Regional' OR event_subtype_moniker='District Event'
+GROUP BY event_address1, date_start
+ORDER BY nearby_teams DESC
+LIMIT 50;
