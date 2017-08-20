@@ -37,7 +37,8 @@ LIMIT 25;
 -- I only have 2017 events loaded, so only doing 2017 for now.
 SELECT ARRAY_AGG(events.event_name) as name,
   ARRAY_AGG(events.event_code) as code,
-  SUM(capacity_total) as capacity, 
+  EXTRACT(WEEK FROM date_start)-8 week,
+  SUM(capacity_total) as capacity,
   COALESCE(SUM(teams.team_count),0) as nearby_teams,
   SUM(capacity_total) < COALESCE(SUM(teams.team_count),0) as full
 FROM events
