@@ -84,51 +84,55 @@ CREATE TABLE raw_teams (
 
 \copy raw_teams from ./teams_2018.csv with (FORMAT CSV, HEADER true)
 
-DROP TABLE IF EXISTS raw_events;
+-- There's something funky going on with events, I've been able to get it loaded using:
 
-CREATE TABLE raw_events (
-	event_name VARCHAR, 
-	event_name_analyzed VARCHAR, 
-	event_code VARCHAR, 
-	fk_program_seasons DECIMAL, 
-	event_subtype VARCHAR, 
-	event_subtype_moniker VARCHAR, 
-	event_type VARCHAR, 
-	event_venue VARCHAR, 
-	event_venue_sort VARCHAR, 
-	event_venue_analyzed VARCHAR, 
-	event_stateprov VARCHAR, 
-	event_country VARCHAR, 
-	event_city VARCHAR, 
-	event_address1 VARCHAR, 
-	event_address2 VARCHAR, 
-	date_end TIMESTAMP, 
-	date_start TIMESTAMP, 
-	event_postalcode VARCHAR, 
-	event_season DECIMAL, 
-	capacity_total DECIMAL, 
-	event_web_url VARCHAR, 
-	flag_bag_and_tag_event BOOLEAN, 
-	program_code_display VARCHAR, 
-	program_name VARCHAR, 
-	flag_display_in_vims BOOLEAN, 
-	ff_event_type_sort_order DECIMAL, 
-	"countryCode" VARCHAR, 
-	open_capacity DECIMAL, 
-	event_fee_currency VARCHAR, 
-	hotel_document VARCHAR, 
-	id DECIMAL, 
-	lat DECIMAL, 
-	lon DECIMAL, 
-	event_venue_room BOOLEAN, 
-	event_fee_base BOOLEAN, 
-	community_event_contact_name_first VARCHAR, 
-	community_event_contact_name_last VARCHAR, 
-	community_event_contact_email VARCHAR
-);
+-- csvsql events_2018.csv --no-constraints --tables raw_events --db postgresql:///[dbname] --insert --overwrite
+
+-- DROP TABLE IF EXISTS raw_events;
+
+-- CREATE TABLE raw_events (
+-- 	event_name VARCHAR, 
+-- 	event_name_analyzed VARCHAR, 
+-- 	event_code VARCHAR, 
+-- 	fk_program_seasons DECIMAL, 
+-- 	event_subtype VARCHAR, 
+-- 	event_subtype_moniker VARCHAR, 
+-- 	event_type VARCHAR, 
+-- 	event_venue VARCHAR, 
+-- 	event_venue_sort VARCHAR, 
+-- 	event_venue_analyzed VARCHAR, 
+-- 	event_stateprov VARCHAR, 
+-- 	event_country VARCHAR, 
+-- 	event_city VARCHAR, 
+-- 	event_address1 VARCHAR, 
+-- 	event_address2 VARCHAR, 
+-- 	date_end TIMESTAMP, 
+-- 	date_start TIMESTAMP, 
+-- 	event_postalcode VARCHAR, 
+-- 	event_season DECIMAL, 
+-- 	capacity_total DECIMAL, 
+-- 	event_web_url VARCHAR, 
+-- 	flag_bag_and_tag_event BOOLEAN, 
+-- 	program_code_display VARCHAR, 
+-- 	program_name VARCHAR, 
+-- 	flag_display_in_vims BOOLEAN, 
+-- 	ff_event_type_sort_order DECIMAL, 
+-- 	"countryCode" VARCHAR, 
+-- 	open_capacity DECIMAL, 
+-- 	event_fee_currency VARCHAR, 
+-- 	hotel_document VARCHAR, 
+-- 	id DECIMAL, 
+-- 	lat DECIMAL, 
+-- 	lon DECIMAL, 
+-- 	event_venue_room BOOLEAN, 
+-- 	event_fee_base BOOLEAN, 
+-- 	community_event_contact_name_first VARCHAR, 
+-- 	community_event_contact_name_last VARCHAR, 
+-- 	community_event_contact_email VARCHAR
+-- );
 
 
-\copy raw_teams from ./events_2018.csv with (FORMAT CSV, HEADER true)
+-- \copy raw_teams from ./events_2018.csv with (FORMAT CSV, HEADER true)
 
 
 -- Haversine Formula based geodistance in miles (constant is diameter of Earth in miles)
@@ -153,7 +157,7 @@ $BODY$
 
 -- Create a join table between airport and regional (let's us precompute this)
 DROP TABLE IF EXISTS event_airport;
-create table event_airport AS (select e.event_code, a.airport, geodistance(e.lat, e.lon, a.latitude, a.longitude) from raw_events e join airports a on 1=1 where a.airport_is_closed is false and a.airport_is_latest is true and event_subtype = 'Regional' );
+create table event_airport AS (select e.event_code, a.airport, geodistance(e.lat, e.lon, a.latitude, a.longitude) from raw_events e join airports a on 1=1 where a.airport_is_closed is false and a.airport_is_latest is true and event_subtype in ('Regional', 'District') );
 
 -- Same deal for teams... Warning this one takes some time. 
 DROP TABLE IF EXISTS team_airport;
