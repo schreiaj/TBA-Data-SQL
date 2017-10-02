@@ -2,7 +2,9 @@ const axios = require('axios');
 const json2csv = require('json2csv');
 
 let year = parseInt(process.argv[2]);
-
+if (!year) {
+  throw "No year"
+}
 let offset = 0;
 let count = 20;
 let events = [];

@@ -51,6 +51,6 @@ LEFT OUTER JOIN (SELECT count(teamid) AS team_count,
   ) AS teams
 ON teams.event_code = events.event_code
 WHERE countryCode='US' AND event_season=2017 AND event_subtype_moniker = 'Regional' OR event_subtype_moniker='District Event'
-GROUP BY event_address1, date_start
+GROUP BY location, date_start
 ORDER BY nearby_teams DESC
 LIMIT 50;
