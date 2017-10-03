@@ -42,7 +42,7 @@ DROP TABLE IF EXISTS Routes;
 CREATE TABLE Routes (
 	tbl VARCHAR  NOT NULL, 
 	"Year" DECIMAL NOT NULL, 
-	quarter BOOLEAN NOT NULL, 
+	quarter INT NOT NULL, 
 	citymarketid_1 DECIMAL NOT NULL, 
 	citymarketid_2 DECIMAL NOT NULL, 
 	city1 VARCHAR NOT NULL, 
@@ -157,7 +157,7 @@ $BODY$
 
 -- Create a join table between airport and regional (let's us precompute this)
 DROP TABLE IF EXISTS event_airport;
-create table event_airport AS (select e.event_code, a.airport, geodistance(e.lat, e.lon, a.latitude, a.longitude) from raw_events e join airports a on 1=1 where a.airport_is_closed is false and a.airport_is_latest is true and event_subtype in ('Regional', 'District') );
+create table event_airport AS (select e.event_code, a.airport, geodistance(e.lat, e.lon, a.latitude, a.longitude) from raw_events e join airports a on 1=1 where a.airport_is_closed is false and a.airport_is_latest is true and event_subtype_moniker in ('Regional', 'District Event') );
 
 -- Same deal for teams... Warning this one takes some time. 
 DROP TABLE IF EXISTS team_airport;
@@ -166,8 +166,90 @@ create table team_airport AS (select t.team_number_yearly, a.airport, geodistanc
 
 -- We're going to set up some indexes on the big table, make querying it suck a little less. 
 -- Again, these will take a while to run. You can skip this step if you want but it genuinely makes playing with data tolerable
-create index team_airport_team_idx ON team_airport (team_number_yearly);
-create index team_airport_airport_idx ON team_airport (airport);
-create index team_airport_geodistance_idx ON team_airport (geodistance);
+CREATE INDEX team_airport_team_idx ON team_airport (team_number_yearly);
+CREATE INDEX team_airport_airport_idx ON team_airport (airport);
+CREATE INDEX team_airport_geodistance_idx ON team_airport (geodistance);
+CREATE INDEX event_airport_event_idx ON event_airport (event_code);
+CREATE INDEX event_airport_airport_idx ON event_airport (airport);
+CREATE INDEX event_airport_geodistance_idx ON event_airport (geodistance);
+
+CREATE INDEX airports_city_market_id_idx ON airports (city_market_id);
+CREATE INDEX raw_teams_team_idx ON raw_teams (team_number_yearly);
+
+-- This is the route data we need 
+-- It's massive so you have to download it yourself because it would make git cry:
+-- https://www.transtats.bts.gov/DL_SelectFields.asp Just select "Prezipped File" and wait
+DROP TABLE IF EXISTS fares;
+CREATE TABLE fares(
+	ItinID varchar
+	,MktID varchar
+	,MktCoupons varchar
+	,Year int
+	,Quarter int
+	,OriginAirportID varchar
+	,OriginAirportSeqID varchar
+	,OriginCityMarketID varchar
+	,Origin varchar
+	,OriginCountry varchar
+	,OriginStateFips varchar
+	,OriginState varchar
+	,OriginStateName varchar
+	,OriginWac varchar
+	,DestAirportID varchar
+	,DestAirportSeqID varchar
+	,DestCityMarketID varchar
+	,Dest varchar
+	,DestCountry varchar
+	,DestStateFips varchar
+	,DestState varchar
+	,DestStateName varchar
+	,DestWac varchar
+	,AirportGroup varchar
+	,WacGroup varchar
+	,TkCarrierChange varchar
+	,TkCarrierGroup varchar
+	,OpCarrierChange varchar
+	,OpCarrierGroup varchar
+	,RPCarrier varchar
+	,TkCarrier varchar
+	,OpCarrier varchar
+	,BulkFare float
+	,Passengers varchar
+	,MktFare float
+	,MktDistance float
+	,MktDistanceGroup varchar
+	,MktMilesFlown float
+	,NonStopMiles varchar
+	,ItinGeoType varchar
+	,MktGeoType varchar
+	,xx varchar
+);
+
+-- \copy fares from Origin_and_Destination_Survey_DB1BMarket_2017_1.csv with (FORMAT CSV, HEADER true) 
+
+CREATE INDEX fares_origin_idx ON fares (origin);
+CREATE INDEX fares_dest_idx ON fares (dest);
+CREATE INDEX fares_mktfare_idx ON fares (MktFare);
+
+-- To grab the closeset airport is pretty easy
+
+-- select airport from team_airport RIGHT JOIN fares r on r.origin = airport where team_number_yearly = '27' order by geodistance asc limit 1;
+
+-- select airport from event_airport RIGHT JOIN fares r on r.origin = airport where event_code='CAAV' order by geodistance asc limit 1;
+
+
+-- This computes the avg fare from the nearest airport to the team and to the event. 
+-- select Origin, Dest, avg(MktFare) from fares where Origin=(select airport from team_airport RIGHT JOIN fares r on r.origin = airport where team_number_yearly = '1056' order by geodistance asc limit 1) AND dest=(select airport from event_airport RIGHT JOIN fares r on r.origin = airport where event_code='HIHO' order by geodistance asc limit 1) group by origin, dest;
+
+CREATE OR REPLACE FUNCTION public.flight_cost(team text, event_code text) RETURNS RECORD AS $$
+	DECLARE 
+	  ret RECORD;
+	BEGIN 
+		select Origin, Dest, avg(MktFare) from fares where Origin=(select airport from team_airport RIGHT JOIN fares r on r.origin = airport where team_number_yearly = team order by geodistance asc limit 1) AND dest=(select airport from event_airport RIGHT JOIN fares r on r.origin = airport where event_code=event_code order by geodistance asc limit 1) group by origin, dest INTO ret;
+	RETURN ret
+	END;
+$$
+  LANGUAGE sql IMMUTABLE
+  COST 100;
 
 
